@@ -14,41 +14,65 @@ function WebDevelopmentFundamentalsRoadmap() {
       <ModuleCards
         theme={themes.default}
         ModuleTitle="Module 1: Frontend Core Essentials"
-        title1="HTML Basics"
-        title2="CSS Basics"
-        title3="JavaScript Basics"
-        paragraphText1="Learn the foundation of web structure with HTML elements and attributes."
-        paragraphText2="Style web pages with CSS properties, layouts, and selectors."
-        paragraphText3="Learn interactivity and logic through JavaScript fundamentals."
-        photo1="/assests/Imgs/page3/HTM_Course.svg"
-        photo2="/assests/Imgs/page3/CSS_Course.svg"
-        photo3="/assests/Imgs/page3/JS_Course.svg"
+        items={[
+          {
+            title: "HTML Basics",
+            description: "Learn the foundation of web structure with HTML elements and attributes.",
+            photo: "/assests/Imgs/page3/HTM_Course.svg"
+          },
+          {
+            title: "CSS Basics",
+            description: "Style web pages with CSS properties, layouts, and selectors.",
+            photo: "/assests/Imgs/page3/CSS_Course.svg"
+          },
+          {
+            title: "JavaScript Basics",
+            description: "Learn interactivity and logic through JavaScript fundamentals.",
+            photo: "/assests/Imgs/page3/JS_Course.svg"
+          }
+        ]}
       />
       <ModuleCards
         theme={themes.default}
         ModuleTitle="Module 2: Building Interactive UIs"
-        title1="DOM Manipulation"
-        title2="Events"
-        title3="Intro to Frameworks"
-        paragraphText1="Learn how to interact with the DOM to create dynamic experiences."
-        paragraphText2="Master event handling to make applications responsive and interactive."
-        paragraphText3="Get familiar with modern UI libraries like React."
-        photo1="/assests/Imgs/page3/DOM_Course.svg"
-        photo2="/assests/Imgs/page3/Events_Course.svg"
-        photo3="/assests/Imgs/page3/Framwork_Course.svg"
+        items={[
+          {
+            title: "DOM Manipulation",
+            description: "Learn how to interact with the DOM to create dynamic experiences.",
+            photo: "/assests/Imgs/page3/DOM_Course.svg"
+          },
+          {
+            title: "Events",
+            description: "Master event handling to make applications responsive and interactive.",
+            photo: "/assests/Imgs/page3/Events_Course.svg"
+          },
+          {
+            title: "Intro to Frameworks",
+            description: "Get familiar with modern UI libraries like React.",
+            photo: "/assests/Imgs/page3/Framwork_Course.svg"
+          }
+        ]}
       />
       <ModuleCards
         theme={themes.default}
         ModuleTitle="Module 3: Advanced Concepts & Deployment"
-        title1="HTML Basics"
-        title2="CSS Basics"
-        title3="JavaScript Basics"
-        paragraphText1="Learn the foundation of web structure with HTML elements and attributes."
-        paragraphText2="Style web pages with CSS properties, layouts, and selectors."
-        paragraphText3="Learn interactivity and logic through JavaScript fundamentals."
-        photo1="/assests/Imgs/page3/HTM_Course.svg"
-        photo2="/assests/Imgs/page3/CSS_Course.svg"
-        photo3="/assests/Imgs/page3/JS_Course.svg"
+        items={[
+          {
+            title: "HTML Basics",
+            description: "Learn the foundation of web structure with HTML elements and attributes.",
+            photo: "/assests/Imgs/page3/HTM_Course.svg"
+          },
+          {
+            title: "CSS Basics",
+            description: "Style web pages with CSS properties, layouts, and selectors.",
+            photo: "/assests/Imgs/page3/CSS_Course.svg"
+          },
+          {
+            title: "JavaScript Basics",
+            description: "Learn interactivity and logic through JavaScript fundamentals.",
+            photo: "/assests/Imgs/page3/JS_Course.svg"
+          }
+        ]}
       />
     </>
   );

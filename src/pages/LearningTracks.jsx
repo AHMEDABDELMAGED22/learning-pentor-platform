@@ -8,11 +8,24 @@ function LearningTracks() {
 
   useEffect(() => {
     fetch("https://x8ki-letl-twmt.n7.xano.io/api:Y-s1sFXN/learning_tracks")
-      .then(res => res.json())
-      .then(data => {
-        setTracks(data);
+      .then(res => {
+        if (!res.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return res.json();
       })
-      .catch(err => console.error(err));
+      .then(data => {
+        if (Array.isArray(data)) {
+          setTracks(data);
+        } else {
+          console.error("API Error: Received non-array data", data);
+          setTracks([]);
+        }
+      })
+      .catch(err => {
+        console.error("Fetch error:", err);
+        setTracks([]);
+      });
   }, []);
 
   return (
@@ -27,22 +40,22 @@ function LearningTracks() {
 
           <div className="row justify-content-center g-4">
             {tracks.filter(track => track.type === "mainTrack")
-            .sort((a, b) => a.id - b.id)
-            .map(track => (
-              <div className="col-md-4" key={track.id}>
-                <div className="learning-card">
-                  <i className={track.img_link}></i>
-                  <h5>{track.title}</h5>
-                  <p>{track.description}</p>
-                  <Link to={track.path} className="btn btn-primary"> Start Learning</Link>
+              .sort((a, b) => a.id - b.id)
+              .map(track => (
+                <div className="col-md-4" key={track.id}>
+                  <div className="learning-card">
+                    <i className={track.img_link}></i>
+                    <h5>{track.title}</h5>
+                    <p>{track.description}</p>
+                    <Link to={track.path} className="btn btn-primary"> Start Learning</Link>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
-      </div>  
-      </>
-);
+      </div>
+    </>
+  );
 }
 
 export default LearningTracks;
