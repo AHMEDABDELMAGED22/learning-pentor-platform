@@ -60,7 +60,7 @@ function GraphicDesignEssentials() {
             {/* Right Image */}
             <div className="col-lg-5 text-center">
               <img
-                src="../public/assests/Imgs/Graphic/Design Process-amico.svg"
+                src="/assests/Imgs/Graphic/Design Process-amico.svg"
                 alt="Design Illustration"
                 className="img-fluid"
                 style={{ maxHeight: "280px" }}
@@ -77,19 +77,19 @@ function GraphicDesignEssentials() {
 
         title1="Introduction to Graphic Design"
         paragraphText1="Discover what graphic design is and how creativity meets purpose."
-        photo1="../public/assests/Imgs/Graphic/Edit photo-rafiki.svg"
+        photo1="/assests/Imgs/Graphic/Edit photo-rafiki.svg"
         card1FieldId={2}
         card1ArticleId={10}
 
         title2="Elements & Principles of Design"
         paragraphText2="Learn balance, contrast, alignment, and rhythm in visual design."
-        photo2="../public/assests/Imgs/Graphic/Design inspiration-amico.svg"
+        photo2="/assests/Imgs/Graphic/Design inspiration-amico.svg"
         card2FieldId={2}
         card2ArticleId={11}
 
         title3="Layout Design and Visual Hierarchy"
         paragraphText3="Master layout techniques for professional and eye-catching designs."
-        photo3="../public/assests/Imgs/Graphic/Design inspiration-pana.svg"
+        photo3="/assests/Imgs/Graphic/Design inspiration-pana.svg"
         card3FieldId={2}
         card3ArticleId={16}
       />
@@ -101,19 +101,19 @@ function GraphicDesignEssentials() {
 
         title1="Introduction to Adobe Photoshop"
         paragraphText1="Learn the basics of photo editing, layers, and adjustments."
-        photo1="../public/assests/Imgs/Graphic/Edit photo-amico.svg"
+        photo1="/assests/Imgs/Graphic/Edit photo-amico.svg"
         card1FieldId={2}
         card1ArticleId={12}
 
         title2="Getting Started with Adobe Illustrator"
         paragraphText2="Design scalable vector graphics for logos and illustrations."
-        photo2="../public/assests/Imgs/Graphic/Designer life-pana.svg"
+        photo2="/assests/Imgs/Graphic/Designer life-pana.svg"
         card2FieldId={2}
         card2ArticleId={13}
 
         title3="Design Tools Mastery: Adobe Creative Suite"
         paragraphText3="Master industry-standard design software efficiently."
-        photo3="../public/assests/Imgs/Graphic/Creation process-bro.svg"
+        photo3="/assests/Imgs/Graphic/Creation process-bro.svg"
         card3FieldId={2}
         card3ArticleId={18}
       />
@@ -125,19 +125,19 @@ function GraphicDesignEssentials() {
 
         title1="Color Theory and Psychology in Design"
         paragraphText1="Understand how color impacts emotion and brand perception."
-        photo1="../public/assests/Imgs/Graphic/Landing page-amico.svg"
+        photo1="/assests/Imgs/Graphic/Landing page-amico.svg"
         card1FieldId={2}
         card1ArticleId={14}
 
         title2="Logo Design and Brand Identity"
         paragraphText2="Craft memorable logos that reflect identity and purpose."
-        photo2="../public/assests/Imgs/Graphic/Artist-pana.svg"
+        photo2="/assests/Imgs/Graphic/Artist-pana.svg"
         card2FieldId={2}
         card2ArticleId={17}
 
         title3="Typography Principles for Digital Media"
         paragraphText3="Master typography for impactful and readable designs."
-        photo3="../public/assests/Imgs/Graphic/Design community-pana.svg"
+        photo3="/assests/Imgs/Graphic/Design community-pana.svg"
         card3FieldId={2}
         card3ArticleId={15}
       />
