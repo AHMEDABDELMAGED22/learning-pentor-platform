@@ -40,18 +40,18 @@ function ProgrammingFundamentals() {
           </div>
 
           <div className="row justify-content-center g-4">
-            {/* <!-- Card 1 --> */}
-            <div className="col-md-5">
-              <div className="learning-card">
-                <i className="bi bi-code-slash"></i>
-                <h5>Data Science Using Python & Intro to AI</h5>
-                <p>
-                  Embark on your journey to becoming a proficient Python developer.
-                  This roadmap covers essential Python programming skills, from core syntax and logic to data structures and real-world projects.
-                </p>
-                <Link to="/learning-tracks/programming-fundamentals/python-fundamentals" className="btn btn-primary">Start Learning</Link>
-              </div>
-            </div>
+            {tracks
+              .filter(track => track.type === 'progTrack')
+              .map((track) => (
+                <div key={track.id} className="col-md-5">
+                  <div className="learning-card">
+                    <i className={track.img_link}></i>
+                    <h5>{track.title}</h5>
+                    <p>{track.description}</p>
+                    <Link to={track.path} className="btn btn-primary">Start Learning</Link>
+                  </div>
+                </div>
+              ))}
           </div>
         </div>
       </div>
