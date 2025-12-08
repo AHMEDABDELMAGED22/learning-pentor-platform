@@ -46,8 +46,7 @@ function LearningTracks() {
                 <h5>Web Development & AI & Data science</h5>
                 <p>
                   Master the building blocks of coding, from logic and
-                  algorithms to data structures, and start your journey in
-                  programming and development.
+                  algorithms to data structures, and start your journey in development.
                 </p>
                 <Link to="/learning-tracks/programming-fundamentals" className="btn btn-primary">Start Learning</Link>
               </div>
