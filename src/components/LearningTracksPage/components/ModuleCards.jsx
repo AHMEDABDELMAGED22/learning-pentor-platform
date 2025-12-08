@@ -46,7 +46,7 @@ function ModuleCards({
           <div className="col-md-4">
             <div className="card h-100">
               <img src={photo1} className="card-img-top" alt="" />
-              <div className="card-body text-center">
+              <div className="card-body text-center d-flex flex-column">
                 <h5 className="card-title" style={{ color: theme.cardTitle }}>
                   {title1}
                 </h5>
@@ -55,7 +55,7 @@ function ModuleCards({
                 </p>
                 <Link
                   to={`/Content/${card1FieldId}/${card1ArticleId}`}
-                  className="btn btn-primary"
+                  className="btn btn-primary mt-auto"
                   style={{ backgroundColor: theme.primary, border: "none" }}
                 >
                   View Resource
@@ -68,7 +68,7 @@ function ModuleCards({
           <div className="col-md-4">
             <div className="card h-100">
               <img src={photo2} className="card-img-top" alt="" />
-              <div className="card-body text-center">
+              <div className="card-body text-center d-flex flex-column">
                 <h5 className="card-title" style={{ color: theme.cardTitle }}>
                   {title2}
                 </h5>
@@ -77,7 +77,7 @@ function ModuleCards({
                 </p>
                 <Link
                   to={`/Content/${card2FieldId}/${card2ArticleId}`}
-                  className="btn btn-primary"
+                  className="btn btn-primary mt-auto"
                   style={{ backgroundColor: theme.primary, border: "none" }}
                 >
                   View Resource
@@ -90,7 +90,7 @@ function ModuleCards({
           <div className="col-md-4">
             <div className="card h-100">
               <img src={photo3} className="card-img-top" alt="" />
-              <div className="card-body text-center">
+              <div className="card-body text-center d-flex flex-column">
                 <h5 className="card-title" style={{ color: theme.cardTitle }}>
                   {title3}
                 </h5>
@@ -99,7 +99,7 @@ function ModuleCards({
                 </p>
                 <Link
                   to={`/Content/${card3FieldId}/${card3ArticleId}`}
-                  className="btn btn-primary"
+                  className="btn btn-primary mt-auto"
                   style={{ backgroundColor: theme.primary, border: "none" }}
                 >
                   View Resource

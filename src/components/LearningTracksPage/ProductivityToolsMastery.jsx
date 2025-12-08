@@ -181,7 +181,7 @@ function ModuleCard({ title, img, type, duration, mIndex, cIndex, btn }) {
                     {/* Using a placeholder image logic or the one found */}
                     <img src={`/${img}`} alt={title} style={{ maxHeight: "150px", maxWidth: "100%" }} />
                 </div>
-                <div className="card-body p-0">
+                <div className="card-body p-0 d-flex flex-column">
                     <div className="d-flex align-items-center mb-2 text-warning">
                         {/* Icon based on type */}
                         <span className="me-2">
@@ -192,7 +192,7 @@ function ModuleCard({ title, img, type, duration, mIndex, cIndex, btn }) {
                         <small className="fw-semibold" style={{ color: "#F57C00" }}>{duration}</small>
                     </div>
                     <h5 className="card-title fw-bold mb-3" style={{ fontSize: "1rem" }}>{title}</h5>
-                    <div className="d-flex justify-content-between align-items-center mt-4">
+                    <div className="d-flex justify-content-between align-items-center mt-auto pt-3">
                         <button className="btn btn-sm text-white px-3" onClick={() => window.open(btn, "_blank")} style={{ backgroundColor: "#00897B", borderRadius: "5px", width: "fit-content", margin: "0px" }}>View Resource</button>
                         <div className="form-check">
                             <input className="form-check-input" type="checkbox" value="" id={`check-${mIndex}-${cIndex}`} />
