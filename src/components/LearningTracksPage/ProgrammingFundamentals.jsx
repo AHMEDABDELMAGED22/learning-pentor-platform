@@ -46,7 +46,7 @@ function ProgrammingFundamentals() {
                 <div key={track.id} className="col-md-5">
                   <div className="learning-card">
                     <i className={track.img_link}></i>
-                    <h5>{track.title}</h5>
+                    <h5>{track.title === "Python Fundamentals" ? "AI & Data Science with Python" : track.title}</h5>
                     <p>{track.description}</p>
                     <Link to={track.path} className="btn btn-primary">Start Learning</Link>
                   </div>

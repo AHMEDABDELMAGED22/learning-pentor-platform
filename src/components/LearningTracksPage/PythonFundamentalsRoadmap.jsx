@@ -38,7 +38,7 @@ function PythonFundamentalsRoadmap() {
   return (
     <>
       <TrackIntroduction
-        TrackTitle="Python Fundamentals Roadmap"
+        TrackTitle="AI & Data Science with Python"
         TrackDescription="Embark on your journey to becoming a proficient Python developer. This roadmap covers essential Python programming skills, from core syntax and logic to data structures and real-world projects."
       />
 
