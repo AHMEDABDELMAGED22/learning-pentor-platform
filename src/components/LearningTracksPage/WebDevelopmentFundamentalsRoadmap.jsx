@@ -14,65 +14,24 @@ function WebDevelopmentFundamentalsRoadmap() {
       <ModuleCards
         theme={themes.default}
         ModuleTitle="Module 1: Frontend Core Essentials"
-        items={[
-          {
-            title: "HTML Basics",
-            description: "Learn the foundation of web structure with HTML elements and attributes.",
-            photo: "/assests/Imgs/page3/HTM_Course.svg"
-          },
-          {
-            title: "CSS Basics",
-            description: "Style web pages with CSS properties, layouts, and selectors.",
-            photo: "/assests/Imgs/page3/CSS_Course.svg"
-          },
-          {
-            title: "JavaScript Basics",
-            description: "Learn interactivity and logic through JavaScript fundamentals.",
-            photo: "/assests/Imgs/page3/JS_Course.svg"
-          }
-        ]}
-      />
-      <ModuleCards
-        theme={themes.default}
-        ModuleTitle="Module 2: Building Interactive UIs"
-        items={[
-          {
-            title: "DOM Manipulation",
-            description: "Learn how to interact with the DOM to create dynamic experiences.",
-            photo: "/assests/Imgs/page3/DOM_Course.svg"
-          },
-          {
-            title: "Events",
-            description: "Master event handling to make applications responsive and interactive.",
-            photo: "/assests/Imgs/page3/Events_Course.svg"
-          },
-          {
-            title: "Intro to Frameworks",
-            description: "Get familiar with modern UI libraries like React.",
-            photo: "/assests/Imgs/page3/Framwork_Course.svg"
-          }
-        ]}
-      />
-      <ModuleCards
-        theme={themes.default}
-        ModuleTitle="Module 3: Advanced Concepts & Deployment"
-        items={[
-          {
-            title: "HTML Basics",
-            description: "Learn the foundation of web structure with HTML elements and attributes.",
-            photo: "/assests/Imgs/page3/HTM_Course.svg"
-          },
-          {
-            title: "CSS Basics",
-            description: "Style web pages with CSS properties, layouts, and selectors.",
-            photo: "/assests/Imgs/page3/CSS_Course.svg"
-          },
-          {
-            title: "JavaScript Basics",
-            description: "Learn interactivity and logic through JavaScript fundamentals.",
-            photo: "/assests/Imgs/page3/JS_Course.svg"
-          }
-        ]}
+
+        title1="Responsive Web Design Fundamentals"
+        paragraphText1="Learn the foundation of web structure."
+        photo1="/assests/Imgs/page3/HTM_Course.svg"
+        card1FieldId={1}
+        card1ArticleId={1}
+
+        title2="CSS Styling and Modern Layout Techniques"
+        paragraphText2="Style web pages with CSS properties."
+        photo2="/assests/Imgs/page3/CSS_Course.svg"
+        card2FieldId={1}
+        card2ArticleId={7}
+
+        title3="Modern JavaScript and ES6+ Features"
+        paragraphText3="Learn interactivity with JavaScript."
+        photo3="/assests/Imgs/page3/JS_Course.svg"
+        card3FieldId={1}
+        card3ArticleId={2}
       />
     </>
   );

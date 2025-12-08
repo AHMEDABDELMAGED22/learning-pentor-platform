@@ -39,18 +39,46 @@ function LearningTracks() {
           </div>
 
           <div className="row justify-content-center g-4">
-            {tracks.filter(track => track.type === "mainTrack")
-              .sort((a, b) => a.id - b.id)
-              .map(track => (
-                <div className="col-md-4" key={track.id}>
-                  <div className="learning-card">
-                    <i className={track.img_link}></i>
-                    <h5>{track.title}</h5>
-                    <p>{track.description}</p>
-                    <Link to={track.path} className="btn btn-primary"> Start Learning</Link>
-                  </div>
-                </div>
-              ))}
+            {/* <!-- Card 1 --> */}
+            <div className="col-md-4">
+              <div className="learning-card">
+                <i className="bi bi-code-slash"></i>
+                <h5>Web Development & AI & Data science</h5>
+                <p>
+                  Master the building blocks of coding, from logic and
+                  algorithms to data structures, and start your journey in
+                  programming and development.
+                </p>
+                <Link to="/learning-tracks/programming-fundamentals" className="btn btn-primary">Start Learning</Link>
+              </div>
+            </div>
+
+            {/* <!-- Card 2 --> */}
+            <div className="col-md-4">
+              <div className="learning-card">
+                <i className="bi bi-brush"></i>
+                <h5>Graphic Design Essentials</h5>
+                <p>
+                  Unleash your creativity with core design principles, refined typography,
+                  and essential industry tools like Adobe Photoshop and Illustrator to develop visuals.
+                </p>
+                <Link to="/learning-tracks/graphic-design-essentials" className="btn btn-primary">Start Learning</Link>
+              </div>
+            </div>
+
+            {/* <!-- Card 3 --> */}
+            <div className="col-md-4">
+              <div className="learning-card">
+                <i className="bi bi-clipboard-check"></i>
+                <h5>Productivity Tools Mastery</h5>
+                <p>
+                  Boost your efficiency with expert-level skills in essential
+                  productivity software, streamlining your workflow and
+                  maximizing output.
+                </p>
+                <Link to="/learning-tracks/productivity-tools" className="btn btn-primary">Start Learning</Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
